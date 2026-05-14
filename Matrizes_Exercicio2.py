@@ -1,13 +1,17 @@
-matriz = []
-for i in range(4):
-    linha = []
-    for j in range(4):
-        valor = (input(f"Digite um valor para [{i}][{j}]: "))
-        while not valor.isdigit():
-            valor = (input(f"Digite um valor válido para [{i}][{j}]: "))
-        valor = int(valor)
-        linha.append(valor)
-    matriz.append(linha)
+matriz = [
+    [0] * 4,
+    [0] * 4,
+    [0] * 4,
+    [0] * 4
+]
+
+for linha in range(4):
+    for coluna in range(4):
+        num = input(f"Digite o número da posição {linha},{coluna}: ")
+        while not num.isdigit():
+            num = input(f"Digite um número válido da posição {linha} {coluna}: ")
+        num = int(num)
+        matriz[linha][coluna] = num
 
 for linha in range(4):
     print(matriz[linha])
