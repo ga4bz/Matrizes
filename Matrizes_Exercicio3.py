@@ -10,7 +10,7 @@ maior = 0
 matricula_maior = 0
 
 for linha in range(5):
-    alunos_info[linha][3] = (alunos_info[linha][1] + alunos_info[linha][2]) / 2
+    alunos_info[linha][3] = (alunos_info[linha][1] + alunos_info[linha][2])
     if alunos_info[linha][3] > maior:
         maior = alunos_info[linha][3]
         matricula_maior = alunos_info[linha][0]
